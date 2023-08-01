@@ -1,38 +1,357 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.book-show {
+  background-color: rgb(245, 238, 238);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  width: 100%;
+  height: 4rem;
+  background-color: rgba(5, 5, 5, 0.793);
+}
+.left-side {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin-left: 8rem;
+}
+.Logo {
+  align-items: center;
+  width: 7rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+input {
+  margin-top: 1rem;
+  width: 20rem;
+  padding: 0.5rem 10rem;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  outline: none;
+}
+.Search-icon {
+  margin-top: 1.5rem;
+  margin-left: 1.2rem;
+  position: absolute;
+}
+.Right-side {
+  display: flex;
+  margin-left: 21rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.right-list {
+  color: rgb(208, 200, 200);
+}
+.down-arrow {
+  margin-left: 0.5rem;
+}
+.btn {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 3px 5px;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+}
+.Second-nav {
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgba(15, 14, 14, 0.732);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Second-left {
+  margin-left: 8rem;
+}
+li {
+  display: inline;
+  color: #fff;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.new-style {
+  color: red;
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+.Second-right {
+  margin-right: 5rem;
+}
+
+.card {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 0.8rem;
+}
+.heading {
+  margin-top: 2rem;
+  margin-left: 9rem;
+}
+.tag-line {
+  margin-top: 4rem;
+}
+.tag-line img {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.live-event {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 0.5rem;
+}
+.head-two {
+  margin-top: 3rem;
+  margin-left: 9rem;
+}
+.premire {
+  width: 100%;
+  height: 40rem;
+  background-color: rgb(43, 49, 72);
+  margin-top: 4rem;
+}
+.latest {
+  margin-left: 8rem;
+}
+.latest img {
+  width: 25rem;
+  height: 7rem;
+}
+.premire-second {
+  margin-left: 9.5rem;
+  margin-bottom: 0.8rem;
+}
+.premire-second h2 {
+  color: #fff;
+}
+.premire-second p {
+  color: #fff;
+}
+.swiper-latest {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.head-white h2 {
+  background-color: #fff;
+  color: #fff;
+}
+.heading-happen {
+  margin-left: 9rem;
+  margin-top: 3rem;
+}
+
+.head-happen {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 0.5rem;
+}
+.fontAwesome-Icon{
+ margin-top: 10rem;
+  font-size: 40px;
+  background-color: white;
+  color: grey;
+  margin-right: 1rem;
+}
+.fontAwesome-left{
+  margin-top: 10rem;
+  font-size: 40px;
+  background-color: white;
+  color: grey;
+}
+.online-stream {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 0.5rem;
+}
+.head-stream {
+  margin-top: 4rem;
+}
+.head-stream h2 {
+  margin-left: 9rem;
+}
+.outdoor-event {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 0.5rem;
+}
+.head-outdoor {
+  margin-top: 7rem;
+}
+.head-outdoor h2 {
+  margin-left: 9rem;
+  font-size: 25px;
+}
+.head-outdoor .new {
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  font-size: 20px;
+}
+.head-laughter {
+  margin-left: 9rem;
+  margin-top: 4rem;
+}
+.laughter {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 0.5rem;
+}
+.head-popular {
+  margin-left: 9rem;
+  margin-top: 4rem;
+}
+.popular {
+  width: 80%;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+.trending {
+  width: 80%;
+  margin: auto;
+  margin-top: 0.5rem;
+  display: grid;
+  column-gap: 10px;
+}
+.head-trending {
+  margin-left: 10rem;
+  margin-top: 4rem;
+}
+.search-trending {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto auto auto auto auto;
+  row-gap: 10px;
+}
+.satya {
+  border-radius: 5px;
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 1.2rem;
+  margin: 10px;
+}
+
+.satya h4 {
+  color: red;
+}
+.footer {
+  width: 100%;
+  background-color: rgb(49, 48, 53);
+  height: 70vh;
+  margin-top: 5rem;
+}
+.down-footer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+.set-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.down-footer p {
+  color: #fff;
+  margin-right: 10rem;
+}
+.right-button .btn1 {
+  padding: 12px 30px;
+  border-radius: 5px;
+  background-color: #f67280;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.second-footer {
+  margin-top: 2rem;
+  flex: none;
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(91, 86, 86);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
+.second-footer img {
+  width: 3rem;
+  height: 3rem;
+}
+.second-footer p {
+  font-size: 15px;
+  color: #fff;
+}
+.resend img {
+  width: 3rem;
+  height: 3rem;
+}
+.resend p {
+  font-size: 15px;
+  color: #fff;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.Subscribe p {
+  font-size: 15px;
+  color: #fff;
+}
+.Subscribe img {
+  width: 3rem;
+  height: 3rem;
+}
+.footer-show{
+margin-top: 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.line{
+  flex-grow: 1;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.logo-image img{
+width: 15rem;
+height: 3rem;
+}
+.social-Contact img{
+  width: 2rem;
+  height: 3rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+.media-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-para{
+  width: 90%;
+  margin: auto;
+}
+.end-para p{
+  display: flex;
+  justify-content: center;
+align-items: center;
+color: rgb(91, 86, 86);
 }

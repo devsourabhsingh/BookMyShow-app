@@ -1,0 +1,57 @@
+.city-select{
+    /* display: flex;
+    justify-content: center;
+    margin-top: 5rem; */
+    display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+  z-index: 9999; 
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.city-select.active{
+    opacity: 1;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.city-name{
+    width: 65rem;
+    height: 18rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+ input{
+    padding: 15px 250px;
+   border: 1px solid black;
+} 
+.find-icon{
+    margin-top: 1.8rem;
+    margin-left: 1.2rem;
+    position: absolute;
+}
+.city-para{
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 20rem;
+}
+.city-sign{
+    margin-top: 4rem;
+}
+.city-sign img{
+    margin-left: 0.5rem;
+margin-right: 0.5rem;
+}
+.city-down-para{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.city-down-para p{
+    color: red;
+}
